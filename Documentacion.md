@@ -39,5 +39,11 @@ manejo de excepciones y conexión con SQL Server.
 **Docente:** \[Nombre del docente\]\
 **Institución:** \[Nombre de la institución\]\
 **Año:** \[Año\]
+**Estudiante(s):** \[JUAN FELIPE SIERRA RONDON\]\
+**Programa:** \[PROGRAMACION AVANZADA\]\
+**Grupo:** \[54465\]\
+**Docente:** \[VERONICA CASTRO MUNAR\]\
+**Institución:** \[CORPORACION UNIFICADA NACIONAL DE EDUCACION SUPERIOR CUN\]\
+**Año:** \[2026\]
 
 ------------------------------------------------------------------------
