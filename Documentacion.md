@@ -33,12 +33,6 @@ Avanzada**, aplicando Programación Orientada a Objetos, base de datos
 relacional, arquitectura por capas, operaciones CRUD, validaciones,
 manejo de excepciones y conexión con SQL Server.
 
-**Estudiante(s):** \[Nombres completos\]\
-**Programa:** \[Nombre del programa\]\
-**Grupo:** \[Grupo\]\
-**Docente:** \[Nombre del docente\]\
-**Institución:** \[Nombre de la institución\]\
-**Año:** \[Año\]
 **Estudiante(s):** \[JUAN FELIPE SIERRA RONDON\]\
 **Programa:** \[PROGRAMACION AVANZADA\]\
 **Grupo:** \[54465\]\
