@@ -1,0 +1,10 @@
+# Archivos temporales y configuraciones de Visual Studio
+.vs/
+
+# Archivos temporales de compilación de .NET
+bin/
+obj/
+
+# Archivos temporales de Windows
+Thumbs.db
+Desktop.ini
