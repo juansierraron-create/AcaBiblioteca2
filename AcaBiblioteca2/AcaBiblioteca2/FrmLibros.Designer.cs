@@ -40,12 +40,12 @@ namespace AcaBiblioteca2
             cmbEditorial = new ComboBox();
             cmbAutor = new ComboBox();
             txtExistencias = new TextBox();
-            txtanio = new TextBox();
+            txtAnio = new TextBox();
             txtCategoria = new TextBox();
             txtTitulo = new TextBox();
             txtISBN = new TextBox();
             lblExistencias = new Label();
-            lblAno = new Label();
+            this.lblAnio = new Label();
             lblCategoria = new Label();
             lblEditorial = new Label();
             lblAutor = new Label();
@@ -129,12 +129,12 @@ namespace AcaBiblioteca2
             pnlDatos.Controls.Add(cmbEditorial);
             pnlDatos.Controls.Add(cmbAutor);
             pnlDatos.Controls.Add(txtExistencias);
-            pnlDatos.Controls.Add(txtanio);
+            pnlDatos.Controls.Add(txtAnio);
             pnlDatos.Controls.Add(txtCategoria);
             pnlDatos.Controls.Add(txtTitulo);
             pnlDatos.Controls.Add(txtISBN);
             pnlDatos.Controls.Add(lblExistencias);
-            pnlDatos.Controls.Add(lblAno);
+            pnlDatos.Controls.Add(this.lblAnio);
             pnlDatos.Controls.Add(lblCategoria);
             pnlDatos.Controls.Add(lblEditorial);
             pnlDatos.Controls.Add(lblAutor);
@@ -169,12 +169,12 @@ namespace AcaBiblioteca2
             txtExistencias.Size = new Size(148, 23);
             txtExistencias.TabIndex = 14;
             // 
-            // txtanio
+            // txtAnio
             // 
-            txtanio.Location = new Point(505, 175);
-            txtanio.Name = "txtanio";
-            txtanio.Size = new Size(148, 23);
-            txtanio.TabIndex = 13;
+            txtAnio.Location = new Point(505, 175);
+            txtAnio.Name = "txtAnio";
+            txtAnio.Size = new Size(148, 23);
+            txtAnio.TabIndex = 13;
             // 
             // txtCategoria
             // 
@@ -208,15 +208,15 @@ namespace AcaBiblioteca2
             lblExistencias.Text = "Existencias : ";
             lblExistencias.Click += Label1_Click;
             // 
-            // lblAno
+            // lblAnio
             // 
-            lblAno.AutoSize = true;
-            lblAno.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lblAno.Location = new Point(394, 175);
-            lblAno.Name = "lblAno";
-            lblAno.Size = new Size(38, 15);
-            lblAno.TabIndex = 8;
-            lblAno.Text = "Año : ";
+            this.lblAnio.AutoSize = true;
+            this.lblAnio.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            this.lblAnio.Location = new Point(394, 175);
+            this.lblAnio.Name = "lblAnio";
+            this.lblAnio.Size = new Size(38, 15);
+            this.lblAnio.TabIndex = 8;
+            this.lblAnio.Text = "Año : ";
             // 
             // lblCategoria
             // 
@@ -387,6 +387,7 @@ namespace AcaBiblioteca2
             // dgvLibros
             // 
             dgvLibros.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvLibros.ImeMode = ImeMode.NoControl;
             dgvLibros.Location = new Point(51, 457);
             dgvLibros.Name = "dgvLibros";
             dgvLibros.Size = new Size(1100, 260);
@@ -417,6 +418,21 @@ namespace AcaBiblioteca2
             ResumeLayout(false);
         }
 
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
         private Panel pnlTitulo;
@@ -435,7 +451,7 @@ namespace AcaBiblioteca2
         private Label lblCategoria;
         private Label lblEditorial;
         private TextBox txtExistencias;
-        private TextBox txtanio;
+        private TextBox txtAnio;
         private TextBox txtCategoria;
         private TextBox txtTitulo;
         private TextBox txtISBN;
