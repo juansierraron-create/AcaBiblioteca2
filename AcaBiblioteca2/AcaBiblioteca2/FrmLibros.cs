@@ -15,8 +15,10 @@ namespace AcaBiblioteca2
     public partial class FrmLibros : Form
     {
      private bool modoEdicion = false;
+        private bool odoEdicion;
+        private object messageBox;
 
-             public FrmLibros()
+        public FrmLibros()
              {
                  InitializeComponent();
                  CargarLibros();
@@ -121,53 +123,42 @@ namespace AcaBiblioteca2
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
             }
-           private void btnBuscar_Click(object sender, EventArgs e)
+        }
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
             try
             {
                 if (string.IsNullOrWhiteSpace(txtBuscarISBN.Text))
                 {
-                    MessageBox.Show(
-                        "Ingrese un ISBN para realizar la búsqueda.",
+                  MessageBox.Show("Por favor, ingrese un ISBN para buscar.",
                         "Biblioteca",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Warning);
-
                     return;
                 }
 
                 Conexion conexion = new Conexion();
-
                 using (SqlConnection cn = conexion.ObtenerConexion())
                 {
                     cn.Open();
-
                     string consulta = "SELECT * FROM Libros WHERE ISBN = @ISBN";
-
-                    using (SqlCommand comando = new SqlCommand(consulta, cn))
+                    using (SqlCommand cmd = new SqlCommand(consulta, cn))
                     {
-                        comando.Parameters.AddWithValue("@ISBN", txtBuscarISBN.Text.Trim());
-
-                        using (SqlDataReader lector = comando.ExecuteReader())
+                        cmd.Parameters.AddWithValue("@ISBN", txtBuscarISBN.Text);
+                        using (SqlDataReader lector = cmd.ExecuteReader())
                         {
                             if (lector.Read())
                             {
                                 txtISBN.Text = lector["ISBN"].ToString();
-                                txtTitulo.Text = lector["Titulo"].ToString();
+                                txtTitulo.Text = lector["Titulo"].ToString();   
                                 txtCategoria.Text = lector["Categoria"].ToString();
                                 txtAnio.Text = lector["Anio"].ToString();
                                 txtExistencias.Text = lector["Existencias"].ToString();
-
-                                MessageBox.Show(
-                                    "Libro encontrado.",
-                                    "Biblioteca",
-                                    MessageBoxButtons.OK,
-                                    MessageBoxIcon.Information);
+                              
                             }
                             else
                             {
-                                MessageBox.Show(
-                                    "No se encontró un libro con ese ISBN.",
+                                MessageBox.Show("No se encontró un libro con ese ISBN.",
                                     "Biblioteca",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
@@ -176,6 +167,7 @@ namespace AcaBiblioteca2
                     }
                 }
             }
+
             catch (Exception ex)
             {
                 MessageBox.Show(
@@ -186,22 +178,5 @@ namespace AcaBiblioteca2
             }
         }
 
-
-
-
-
-
-
     }
-
-
-
-
-
-
-
-
-
-
-}
 }

@@ -45,7 +45,7 @@ namespace AcaBiblioteca2
             txtTitulo = new TextBox();
             txtISBN = new TextBox();
             lblExistencias = new Label();
-            this.lblAnio = new Label();
+            lblAnio = new Label();
             lblCategoria = new Label();
             lblEditorial = new Label();
             lblAutor = new Label();
@@ -106,6 +106,7 @@ namespace AcaBiblioteca2
             btnBuscar.TabIndex = 2;
             btnBuscar.Text = "Buscar ";
             btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // txtBuscarISBN
             // 
@@ -134,7 +135,7 @@ namespace AcaBiblioteca2
             pnlDatos.Controls.Add(txtTitulo);
             pnlDatos.Controls.Add(txtISBN);
             pnlDatos.Controls.Add(lblExistencias);
-            pnlDatos.Controls.Add(this.lblAnio);
+            pnlDatos.Controls.Add(lblAnio);
             pnlDatos.Controls.Add(lblCategoria);
             pnlDatos.Controls.Add(lblEditorial);
             pnlDatos.Controls.Add(lblAutor);
@@ -210,13 +211,13 @@ namespace AcaBiblioteca2
             // 
             // lblAnio
             // 
-            this.lblAnio.AutoSize = true;
-            this.lblAnio.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            this.lblAnio.Location = new Point(394, 175);
-            this.lblAnio.Name = "lblAnio";
-            this.lblAnio.Size = new Size(38, 15);
-            this.lblAnio.TabIndex = 8;
-            this.lblAnio.Text = "Año : ";
+            lblAnio.AutoSize = true;
+            lblAnio.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblAnio.Location = new Point(394, 175);
+            lblAnio.Name = "lblAnio";
+            lblAnio.Size = new Size(38, 15);
+            lblAnio.TabIndex = 8;
+            lblAnio.Text = "Año : ";
             // 
             // lblCategoria
             // 
@@ -447,6 +448,7 @@ namespace AcaBiblioteca2
         private Label lblAutor;
         private Label lblTituloLib;
         private Label lblExistencias;
+        private Label lblAnio;
         private Label lblAno;
         private Label lblCategoria;
         private Label lblEditorial;
