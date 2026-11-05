@@ -318,6 +318,7 @@ namespace AcaBiblioteca2
             btnEliminar.Text = "Eliminar";
             btnEliminar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // btnEditar
             // 
@@ -339,6 +340,7 @@ namespace AcaBiblioteca2
             btnEditar.Text = "Editar";
             btnEditar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
             // 
             // btnGuardar
             // 
@@ -383,7 +385,7 @@ namespace AcaBiblioteca2
             btnNuevo.Text = "Nuevo";
             btnNuevo.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnNuevo.UseVisualStyleBackColor = true;
-            btnNuevo.Click += btnNuevo_Click;
+            btnNuevo.Click += btnNuevo_Click_Designer;
             // 
             // dgvLibros
             // 
@@ -393,6 +395,7 @@ namespace AcaBiblioteca2
             dgvLibros.Name = "dgvLibros";
             dgvLibros.Size = new Size(1100, 260);
             dgvLibros.TabIndex = 4;
+            dgvLibros.CellDoubleClick += dgvLibros_CellDoubleClick;
             // 
             // FrmLibros
             // 
@@ -419,16 +422,22 @@ namespace AcaBiblioteca2
             ResumeLayout(false);
         }
 
-        private void btnNuevo_Click(object sender, EventArgs e)
+        private void BtnGuardar_Click(object sender, EventArgs e)
         {
             throw new NotImplementedException();
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
+        private void btnNuevo_Click_Designer(object sender, EventArgs e)
         {
             throw new NotImplementedException();
         }
 
+        private void BtnNuevo_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+      
         private void Label1_Click(object sender, EventArgs e)
         {
             throw new NotImplementedException();
