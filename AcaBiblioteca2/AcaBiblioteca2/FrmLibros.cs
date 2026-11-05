@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
+using System.Windows.Documents;
 using System.Windows.Forms;
 
 namespace AcaBiblioteca2
@@ -15,8 +16,19 @@ namespace AcaBiblioteca2
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Label1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+
 
         }
     }

@@ -73,9 +73,11 @@
             // 
             btnSalir.AutoSize = true;
             btnSalir.BackColor = Color.MediumSeaGreen;
+            btnSalir.Cursor = Cursors.Hand;
             btnSalir.Dock = DockStyle.Top;
             btnSalir.FlatAppearance.BorderSize = 0;
-            btnSalir.Font = new Font("Consolas", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSalir.FlatStyle = FlatStyle.Flat;
+            btnSalir.Font = new Font("Segoe UI Black", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSalir.IconChar = FontAwesome.Sharp.IconChar.Close;
             btnSalir.IconColor = Color.Black;
             btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -95,9 +97,11 @@
             // 
             btnReportes.AutoSize = true;
             btnReportes.BackColor = Color.MediumSeaGreen;
+            btnReportes.Cursor = Cursors.Hand;
             btnReportes.Dock = DockStyle.Top;
             btnReportes.FlatAppearance.BorderSize = 0;
-            btnReportes.Font = new Font("Consolas", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnReportes.FlatStyle = FlatStyle.Flat;
+            btnReportes.Font = new Font("Segoe UI Black", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnReportes.IconChar = FontAwesome.Sharp.IconChar.RupiahSign;
             btnReportes.IconColor = Color.Black;
             btnReportes.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -117,9 +121,11 @@
             // 
             btnPrestamos.AutoSize = true;
             btnPrestamos.BackColor = Color.MediumSeaGreen;
+            btnPrestamos.Cursor = Cursors.Hand;
             btnPrestamos.Dock = DockStyle.Top;
             btnPrestamos.FlatAppearance.BorderSize = 0;
-            btnPrestamos.Font = new Font("Consolas", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnPrestamos.FlatStyle = FlatStyle.Flat;
+            btnPrestamos.Font = new Font("Segoe UI Black", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnPrestamos.IconChar = FontAwesome.Sharp.IconChar.BookBookmark;
             btnPrestamos.IconColor = Color.Black;
             btnPrestamos.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -139,9 +145,11 @@
             // 
             btnEditoriales.AutoSize = true;
             btnEditoriales.BackColor = Color.MediumSeaGreen;
+            btnEditoriales.Cursor = Cursors.Hand;
             btnEditoriales.Dock = DockStyle.Top;
             btnEditoriales.FlatAppearance.BorderSize = 0;
-            btnEditoriales.Font = new Font("Consolas", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEditoriales.FlatStyle = FlatStyle.Flat;
+            btnEditoriales.Font = new Font("Segoe UI Black", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEditoriales.IconChar = FontAwesome.Sharp.IconChar.Bookmark;
             btnEditoriales.IconColor = Color.Black;
             btnEditoriales.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -161,9 +169,11 @@
             // 
             btnAutores.AutoSize = true;
             btnAutores.BackColor = Color.MediumSeaGreen;
+            btnAutores.Cursor = Cursors.Hand;
             btnAutores.Dock = DockStyle.Top;
             btnAutores.FlatAppearance.BorderSize = 0;
-            btnAutores.Font = new Font("Consolas", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAutores.FlatStyle = FlatStyle.Flat;
+            btnAutores.Font = new Font("Segoe UI Black", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAutores.IconChar = FontAwesome.Sharp.IconChar.BookReader;
             btnAutores.IconColor = Color.Black;
             btnAutores.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -183,9 +193,11 @@
             // 
             btnUsuarios.AutoSize = true;
             btnUsuarios.BackColor = Color.MediumSeaGreen;
+            btnUsuarios.Cursor = Cursors.Hand;
             btnUsuarios.Dock = DockStyle.Top;
             btnUsuarios.FlatAppearance.BorderSize = 0;
-            btnUsuarios.Font = new Font("Consolas", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnUsuarios.FlatStyle = FlatStyle.Flat;
+            btnUsuarios.Font = new Font("Segoe UI Black", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnUsuarios.IconChar = FontAwesome.Sharp.IconChar.PeopleGroup;
             btnUsuarios.IconColor = Color.Black;
             btnUsuarios.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -205,9 +217,11 @@
             // 
             btnLibros.AutoSize = true;
             btnLibros.BackColor = Color.MediumSeaGreen;
+            btnLibros.Cursor = Cursors.Hand;
             btnLibros.Dock = DockStyle.Top;
             btnLibros.FlatAppearance.BorderSize = 0;
-            btnLibros.Font = new Font("Consolas", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLibros.FlatStyle = FlatStyle.Flat;
+            btnLibros.Font = new Font("Segoe UI Black", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLibros.IconChar = FontAwesome.Sharp.IconChar.Book;
             btnLibros.IconColor = Color.Black;
             btnLibros.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -227,9 +241,11 @@
             // 
             btnInicio.AutoSize = true;
             btnInicio.BackColor = Color.MediumSeaGreen;
+            btnInicio.Cursor = Cursors.Hand;
             btnInicio.Dock = DockStyle.Top;
             btnInicio.FlatAppearance.BorderSize = 0;
-            btnInicio.Font = new Font("Consolas", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnInicio.FlatStyle = FlatStyle.Flat;
+            btnInicio.Font = new Font("Segoe UI Black", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnInicio.IconChar = FontAwesome.Sharp.IconChar.HomeLg;
             btnInicio.IconColor = Color.Black;
             btnInicio.IconFont = FontAwesome.Sharp.IconFont.Auto;

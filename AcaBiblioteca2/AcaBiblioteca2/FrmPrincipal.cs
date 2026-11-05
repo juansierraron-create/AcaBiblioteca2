@@ -1,3 +1,5 @@
+using AcaBiblioteca2.Datos;
+
 namespace AcaBiblioteca2
 {
     public partial class FrmPrincipal : Form
@@ -5,6 +7,28 @@ namespace AcaBiblioteca2
         public FrmPrincipal()
         {
             InitializeComponent();
+            Conexion conexion = new Conexion();
+            try
+            {
+                using (var conn = conexion.ObtenerConexion())
+            {
+                conn.Open();
+                // La conexión se ha establecido correctamente
+                MessageBox.Show("Conexión exitosa a la base de datos.",
+                    "AcaBiblioteca",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information); 
+                }
+            }
+            catch (Exception ex)
+            {
+                // Ocurrió un error al intentar conectarse a la base de datos
+                MessageBox.Show("Error al conectar a la base de datos: " + ex.Message,
+                    "AcaBiblioteca",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+
             AbrirFormulario(new FrmInicio());
         }
 
